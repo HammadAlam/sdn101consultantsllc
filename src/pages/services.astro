@@ -1,0 +1,194 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Services — SDN101 Consultants LLC" description="Cloud cost optimization, disaster recovery, network architecture, LMS administration, and certification program management for small businesses." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="page-header">
+				<div class="page-header-inner">
+					<h1>Services</h1>
+					<p>Practical technology consulting for small and mid-size businesses — cloud, networking, and learning operations.</p>
+				</div>
+			</div>
+
+			<div class="page-inner">
+
+				<div class="category">
+					<div class="category-label">Cloud & Infrastructure</div>
+
+					<div class="service">
+						<h2>Cloud Cost Optimization</h2>
+						<p>Most small businesses on AWS or Azure overpay by 20–40% due to idle resources, oversized instances, and unused services. We conduct a full audit of your cloud spend, identify waste, and implement a right-sizing and savings plan that reduces your monthly bill — immediately and sustainably.</p>
+						<ul>
+							<li>Cloud spend audit across AWS / Azure</li>
+							<li>Right-sizing EC2, RDS, and compute resources</li>
+							<li>Reserved Instance and Savings Plan recommendations</li>
+							<li>Idle and orphaned resource cleanup</li>
+							<li>Ongoing cost governance and alerting setup</li>
+						</ul>
+					</div>
+
+					<div class="service">
+						<h2>Cloud Migration & Consolidation</h2>
+						<p>Whether you're moving from on-premises to cloud, consolidating workloads across accounts, or migrating between providers — we plan and execute migrations that minimize downtime, risk, and surprises.</p>
+						<ul>
+							<li>Migration readiness assessment</li>
+							<li>Lift-and-shift and re-platform strategies</li>
+							<li>Multi-account consolidation and organization setup</li>
+							<li>Data migration and cutover planning</li>
+							<li>Post-migration validation and optimization</li>
+						</ul>
+					</div>
+
+					<div class="service">
+						<h2>Disaster Recovery & Business Continuity</h2>
+						<p>A DR plan you never tested is no plan at all. We design recovery architectures sized for your business, implement automated backups, and document runbooks your team can actually execute when it matters.</p>
+						<ul>
+							<li>RTO/RPO requirements definition</li>
+							<li>AWS Backup and cross-region replication setup</li>
+							<li>DR runbook documentation and testing</li>
+							<li>Failover architecture design</li>
+							<li>Business continuity planning for critical systems</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="category">
+					<div class="category-label">Network Architecture</div>
+
+					<div class="service">
+						<h2>Network Design & SDN</h2>
+						<p>Modern businesses need networks that are secure, scalable, and cloud-ready. We design and implement network architectures — from VPC design and hybrid connectivity to software-defined networking for distributed environments.</p>
+						<ul>
+							<li>AWS VPC design — subnets, routing, security groups, NACLs</li>
+							<li>Hybrid connectivity (VPN, Direct Connect, ExpressRoute)</li>
+							<li>Network segmentation and zero-trust architecture</li>
+							<li>SD-WAN and cloud networking for multi-site businesses</li>
+							<li>Network monitoring and observability setup</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="category">
+					<div class="category-label">Learning & Enablement</div>
+
+					<div class="service">
+						<h2>LMS Administration & Platform Management</h2>
+						<p>Full administration of enterprise learning platforms — configuration, integrations, content publishing, compliance reporting, and vendor management. We handle the operational complexity so your team can focus on content and learners.</p>
+						<ul>
+							<li>Platform setup and configuration (SkillJar, Teachable, Absorb, Docebo)</li>
+							<li>LMS migrations with zero learner disruption</li>
+							<li>Integration management (Salesforce, Credly, Pearson VUE, Proctorio)</li>
+							<li>SCORM / AICC content support and troubleshooting</li>
+							<li>GDPR compliance, data retention, and audit trails</li>
+						</ul>
+					</div>
+
+					<div class="service">
+						<h2>Certification Program Management</h2>
+						<p>Launch and operate technical certification programs at scale — from exam logistics and proctoring operations to badge issuance and database management. Proven experience managing programs with 25,000+ certified engineers.</p>
+						<ul>
+							<li>Pearson VUE exam scheduling and issue resolution</li>
+							<li>Credly digital badge configuration and issuance</li>
+							<li>Certification database management and reconciliation</li>
+							<li>Exam integrity controls and anti-cheating processes</li>
+							<li>Program metrics reporting and stakeholder dashboards</li>
+						</ul>
+					</div>
+
+					<div class="service">
+						<h2>Training Operations</h2>
+						<p>Day-to-day operational management of instructor-led and self-paced training programs — scheduling, vendor coordination, learner support, and workflow automation that keeps programs running efficiently at scale.</p>
+						<ul>
+							<li>ILT session scheduling and calendar management</li>
+							<li>Learner support inbox management and SLA adherence</li>
+							<li>Certificate generation and delivery automation</li>
+							<li>Vendor management (Skilljar, Camtasia, HeyGen, Lucidchart)</li>
+							<li>Executive reporting and program KPI dashboards</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="cta-box">
+					<h2>Not sure where to start?</h2>
+					<p>Tell us about your situation and we'll recommend a practical path forward.</p>
+					<a href="/contact" class="btn-primary">Talk to Us</a>
+				</div>
+
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page-header {
+		background: linear-gradient(135deg, rgb(var(--black)) 0%, #0f2057 100%);
+		padding: 3.5em 1.5em;
+	}
+	.page-header-inner {
+		max-width: 760px;
+		margin: 0 auto;
+	}
+	.page-header h1 { color: white; font-size: 2.4em; margin-bottom: 0.3em; }
+	.page-header p { color: #cbd5e1; font-size: 1.05em; margin: 0; }
+
+	.page-inner { max-width: 760px; margin: 0 auto; padding: 3em 1.5em; }
+
+	.category { margin-bottom: 3em; }
+	.category-label {
+		display: inline-block;
+		background: #eff6ff;
+		color: var(--accent);
+		border: 1px solid #bfdbfe;
+		padding: 0.3em 0.9em;
+		border-radius: 999px;
+		font-size: 0.78em;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		margin-bottom: 1.5em;
+	}
+	.service {
+		margin-bottom: 2.2em;
+		padding-bottom: 2.2em;
+		border-bottom: 1px solid #e2e8f0;
+	}
+	.service:last-child { border-bottom: none; }
+	h2 {
+		font-size: 1.3em;
+		color: rgb(var(--black));
+		margin-bottom: 0.5em;
+	}
+	p { color: rgb(var(--gray-dark)); line-height: 1.75; margin-bottom: 0.8em; font-size: 0.95em; }
+	ul { padding-left: 1.3em; margin: 0; }
+	li { font-size: 0.9em; color: rgb(var(--gray)); margin-bottom: 0.35em; line-height: 1.6; }
+
+	.cta-box {
+		background: #eff6ff;
+		border-radius: 10px;
+		padding: 2.5em;
+		text-align: center;
+		margin-top: 2em;
+	}
+	.cta-box h2 { font-size: 1.4em; color: rgb(var(--black)); margin-bottom: 0.4em; }
+	.cta-box p { color: rgb(var(--gray)); margin-bottom: 1.2em; }
+	.btn-primary {
+		background: var(--accent);
+		color: white;
+		padding: 0.8em 1.8em;
+		border-radius: 6px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 0.95em;
+	}
+	.btn-primary:hover { background: var(--accent-dark); color: white; }
+</style>

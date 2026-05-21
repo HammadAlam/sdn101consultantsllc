@@ -12,39 +12,421 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		<Header />
+
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<!-- Hero -->
+			<section class="hero">
+				<div class="hero-inner">
+					<div class="hero-badge">Technology Consulting for Small Business</div>
+					<h1>Cloud. Network.<br/>Learning. Simplified.</h1>
+					<p class="tagline">
+						SDN101 Consultants LLC helps small and mid-size businesses reduce cloud costs,
+						modernize infrastructure, and build the technology programs their teams need
+						to grow — without enterprise overhead.
+					</p>
+					<div class="cta-group">
+						<a href="/contact" class="btn-primary">Schedule a Conversation</a>
+						<a href="/services" class="btn-secondary">Explore Services</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Who we help -->
+			<section class="who">
+				<div class="who-inner">
+					<h2>Who We Work With</h2>
+					<div class="who-cards">
+						<div class="who-card">
+							<div class="card-head"><span class="who-icon">☁️</span><h3>Small Businesses on Any Cloud</h3></div>
+							<p>Paying too much for cloud? Whether you are on AWS, Azure, Google Cloud, or any other provider — we audit, optimize, and right-size your infrastructure to eliminate waste and cut monthly spend.</p>
+						</div>
+						<div class="who-card">
+							<div class="card-head"><span class="who-icon">🔄</span><h3>Companies Consolidating Platforms</h3></div>
+							<p>Merging tools, migrating workloads, or moving off legacy systems? We plan and execute consolidations that minimize disruption.</p>
+						</div>
+						<div class="who-card">
+							<div class="card-head"><span class="who-icon">🛡️</span><h3>Organizations Needing DR Protection</h3></div>
+							<p>No disaster recovery plan? We design and implement backup and recovery solutions sized for your business — not for enterprises.</p>
+						</div>
+						<div class="who-card">
+							<div class="card-head"><span class="who-icon">📚</span><h3>Teams Scaling Training Programs</h3></div>
+							<p>Growing fast and need your LMS and certification programs to keep up? We build the operational infrastructure to scale without chaos.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- Free Assessment CTA -->
+			<section class="promo">
+				<div class="promo-inner">
+					<div class="promo-badge">Free for Small Businesses</div>
+					<h2>Get Your IT Cost Optimization Picture</h2>
+					<p>
+						Not sure where your money is going or where you're exposed? We'll help you build
+						a clear picture of your small business IT infrastructure — covering cloud costs,
+						security posture, and disaster recovery readiness — along with a practical
+						ROI framework that shows exactly where to invest and what it saves you.
+					</p>
+					<div class="promo-pillars">
+						<div class="promo-pillar">
+							<span class="promo-icon">💰</span>
+							<div>
+								<strong>Cost Optimization</strong>
+								<p>Identify waste, right-size resources, and eliminate redundant spend across your cloud and IT stack.</p>
+							</div>
+						</div>
+						<div class="promo-pillar">
+							<span class="promo-icon">🔒</span>
+							<div>
+								<strong>Security Posture</strong>
+								<p>Understand your exposure — misconfigurations, access controls, and compliance gaps — before they become incidents.</p>
+							</div>
+						</div>
+						<div class="promo-pillar">
+							<span class="promo-icon">🛡️</span>
+							<div>
+								<strong>Disaster Recovery Readiness</strong>
+								<p>Know exactly how long your business would be down if something went wrong — and what it would cost you.</p>
+							</div>
+						</div>
+						<div class="promo-pillar">
+							<span class="promo-icon">📈</span>
+							<div>
+								<strong>ROI Framework</strong>
+								<p>A clear before/after model showing the financial impact of every recommended change — so every decision is justified.</p>
+							</div>
+						</div>
+					</div>
+					<a href="/contact" class="btn-promo">Request Your Free Assessment</a>
+				</div>
+			</section>
+
+			<!-- Services -->
+			<section class="services">
+				<div class="services-inner">
+					<h2>What We Do</h2>
+					<div class="service-grid">
+						<div class="service-card">
+							<div class="card-head"><div class="service-icon">💰</div><h3>Cloud Cost Optimization</h3></div>
+							<p>Audit your AWS or Azure spend, eliminate idle resources, implement savings plans, and right-size workloads — typically reducing monthly cloud bills by 20–40%.</p>
+						</div>
+						<div class="service-card">
+							<div class="card-head"><div class="service-icon">🔀</div><h3>Cloud Migration & Consolidation</h3></div>
+							<p>Move workloads to the cloud, consolidate platforms, or migrate between providers with a structured plan that minimizes downtime and risk.</p>
+						</div>
+						<div class="service-card">
+							<div class="card-head"><div class="service-icon">🛡️</div><h3>Disaster Recovery & Business Continuity</h3></div>
+							<p>Design and implement backup strategies, DR runbooks, and recovery architecture that meets your RTO/RPO requirements without over-engineering.</p>
+						</div>
+						<div class="service-card">
+							<div class="card-head"><div class="service-icon">🌐</div><h3>Network Architecture & SDN</h3></div>
+							<p>Design cloud-native and hybrid network architectures — VPCs, connectivity, segmentation, and software-defined networking for modern infrastructure.</p>
+						</div>
+						<div class="service-card">
+							<div class="card-head"><div class="service-icon">🎓</div><h3>LMS Administration</h3></div>
+							<p>Full management of enterprise learning platforms — SkillJar, Teachable, Absorb, Docebo — including migrations, integrations, and compliance reporting.</p>
+						</div>
+						<div class="service-card">
+							<div class="card-head"><div class="service-icon">📋</div><h3>Certification Program Management</h3></div>
+							<p>Launch and operate technical certification programs at scale — exam logistics, Pearson VUE coordination, badge issuance, and database management.</p>
+						</div>
+					</div>
+					<div class="services-link">
+						<a href="/services">View detailed services →</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Why SDN101 -->
+			<section class="why">
+				<div class="why-inner">
+					<div class="why-text">
+						<h2>Why SDN101 Consultants</h2>
+						<p>We're not a large agency with layers of overhead. We're experienced practitioners — AWS-certified cloud architects and operations specialists — who work directly with your team to solve real problems.</p>
+						<p>No account managers. No junior staff on your project. You get senior expertise, clear communication, and outcomes you can measure.</p>
+						<ul>
+							<li>AWS Certified Solutions Architect</li>
+							<li>30+ years of enterprise technology experience</li>
+							<li>Deep hands-on expertise across cloud, networking, and learning platforms</li>
+							<li>Fixed-fee and retainer engagements — no surprise invoices</li>
+						</ul>
+						<a href="/about" class="btn-secondary" style="display:inline-block; margin-top:1.2em;">More About Us</a>
+					</div>
+					<div class="why-stats">
+						<div class="stat">
+							<span class="stat-num">25,000+</span>
+							<span class="stat-lbl">Certified engineers supported</span>
+						</div>
+						<div class="stat">
+							<span class="stat-num">60%</span>
+							<span class="stat-lbl">Average platform cost savings delivered</span>
+						</div>
+						<div class="stat">
+							<span class="stat-num">400%</span>
+							<span class="stat-lbl">Program growth achieved for clients</span>
+						</div>
+						<div class="stat">
+							<span class="stat-num">10+</span>
+							<span class="stat-lbl">Years combined technology experience</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section class="final-cta">
+				<div class="final-cta-inner">
+					<h2>Ready to reduce costs and simplify your technology?</h2>
+					<p>Let's talk about your specific situation — no sales pitch, just a conversation about what you need.</p>
+					<a href="/contact" class="btn-primary">Get in Touch</a>
+				</div>
+			</section>
 		</main>
+
 		<Footer />
 	</body>
 </html>
+
+<style>
+	main { width: 100%; max-width: 100%; padding: 0; margin: 0; }
+
+	/* Hero */
+	.hero {
+		background: linear-gradient(135deg, rgb(var(--black)) 0%, #0f2057 100%);
+		padding: 5em 1.5em 4.5em;
+	}
+	.hero-inner {
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.hero-badge {
+		display: inline-block;
+		background: rgba(147,197,253,0.15);
+		color: #93c5fd;
+		border: 1px solid rgba(147,197,253,0.3);
+		padding: 0.4em 1em;
+		border-radius: 999px;
+		font-size: 0.8em;
+		font-weight: 600;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		margin-bottom: 1.2em;
+	}
+	.hero h1 {
+		font-size: 3.2em;
+		color: white;
+		line-height: 1.1;
+		margin-bottom: 0.6em;
+	}
+	.tagline {
+		font-size: 1.1em;
+		color: #cbd5e1;
+		max-width: 620px;
+		margin: 0 auto 2em;
+		line-height: 1.75;
+	}
+	.cta-group {
+		display: flex;
+		gap: 1em;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.btn-primary {
+		background: #2563eb;
+		color: white;
+		padding: 0.8em 1.8em;
+		border-radius: 6px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 0.95em;
+	}
+	.btn-primary:hover { background: #1d4ed8; color: white; }
+	.btn-secondary {
+		border: 2px solid #93c5fd;
+		color: #93c5fd;
+		padding: 0.8em 1.8em;
+		border-radius: 6px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 0.95em;
+	}
+	.btn-secondary:hover { background: rgba(147,197,253,0.1); color: #93c5fd; }
+
+	/* Who */
+	.who { padding: 4em 1.5em; background: #f8fafc; }
+	.who-inner { max-width: 960px; margin: 0 auto; }
+	.who h2 { font-size: 1.9em; margin-bottom: 1.2em; color: rgb(var(--black)); }
+	.who-cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5em;
+	}
+	.who-card {
+		background: white;
+		border: 1px solid #e2e8f0;
+		border-radius: 10px;
+		padding: 1.6em;
+	}
+	.card-head { display: flex; align-items: center; gap: 0.5em; margin-bottom: 0.6em; }
+	.who-icon { font-size: 2em; line-height: 1; flex-shrink: 0; }
+	.who-card h3, .service-card h3 { margin: 0; }
+	.who-card h3 { font-size: 1em; font-weight: 700; color: rgb(var(--black)); margin-bottom: 0.4em; }
+	.who-card p { font-size: 0.9em; color: rgb(var(--gray)); line-height: 1.65; margin: 0; }
+
+	/* Services */
+	.services { padding: 4em 1.5em; }
+	.services-inner { max-width: 960px; margin: 0 auto; }
+	.services h2 { font-size: 1.9em; margin-bottom: 1.2em; color: rgb(var(--black)); }
+	.service-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1.4em;
+		margin-bottom: 1.5em;
+	}
+	.service-card {
+		border: 1px solid #e2e8f0;
+		border-radius: 10px;
+		padding: 1.4em;
+	}
+	.service-card:hover { border-color: var(--accent); }
+	.service-icon { font-size: 1.8em; line-height: 1; flex-shrink: 0; }
+	.service-card h3 { font-size: 0.95em; font-weight: 700; color: rgb(var(--black)); margin-bottom: 0.4em; }
+	.service-card p { font-size: 0.88em; color: rgb(var(--gray)); line-height: 1.65; margin: 0; }
+	.services-link { text-align: right; }
+	.services-link a { color: var(--accent); font-weight: 600; text-decoration: none; font-size: 0.95em; }
+	.services-link a:hover { text-decoration: underline; }
+
+	/* Why */
+	.why { background: rgb(var(--black)); padding: 4em 1.5em; }
+	.why-inner {
+		max-width: 960px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1.2fr 1fr;
+		gap: 4em;
+		align-items: center;
+	}
+	.why-text h2 { font-size: 1.9em; color: white; margin-bottom: 0.8em; }
+	.why-text p { color: #cbd5e1; font-size: 0.95em; line-height: 1.75; margin-bottom: 0.8em; }
+	.why-text ul { padding-left: 1.2em; margin: 0; }
+	.why-text li { color: #94a3b8; font-size: 0.9em; margin-bottom: 0.4em; line-height: 1.6; }
+	.why-stats {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5em;
+	}
+	.stat {
+		background: rgba(255,255,255,0.05);
+		border: 1px solid rgba(255,255,255,0.1);
+		border-radius: 10px;
+		padding: 1.2em;
+		text-align: center;
+	}
+	.stat-num { display: block; font-size: 2em; font-weight: 700; color: #93c5fd; line-height: 1; margin-bottom: 0.3em; }
+	.stat-lbl { font-size: 0.78em; color: #94a3b8; line-height: 1.4; }
+
+	/* Final CTA */
+	.final-cta { padding: 4em 1.5em; background: #eff6ff; text-align: center; }
+	.final-cta-inner { max-width: 600px; margin: 0 auto; }
+	.final-cta h2 { font-size: 1.7em; color: rgb(var(--black)); margin-bottom: 0.5em; }
+	.final-cta p { color: rgb(var(--gray)); font-size: 1em; margin-bottom: 1.5em; }
+	.final-cta .btn-primary { background: var(--accent); }
+	.final-cta .btn-primary:hover { background: var(--accent-dark); }
+
+	@media (max-width: 720px) {
+		.hero h1 { font-size: 2.2em; }
+		.who-cards { grid-template-columns: 1fr; }
+		.service-grid { grid-template-columns: 1fr; }
+		.why-inner { grid-template-columns: 1fr; gap: 2em; }
+		.why-stats { grid-template-columns: 1fr 1fr; }
+	}
+
+	/* Promo */
+	.promo {
+		background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+		padding: 4em 1.5em;
+	}
+	.promo-inner {
+		max-width: 960px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.promo-badge {
+		display: inline-block;
+		background: rgba(255,255,255,0.15);
+		color: #bfdbfe;
+		border: 1px solid rgba(255,255,255,0.25);
+		padding: 0.35em 1em;
+		border-radius: 999px;
+		font-size: 0.78em;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		margin-bottom: 0.8em;
+	}
+	.promo h2 {
+		font-size: 2em;
+		color: white;
+		margin-bottom: 0.5em;
+	}
+	.promo > .promo-inner > p {
+		color: #bfdbfe;
+		font-size: 1em;
+		max-width: 680px;
+		margin: 0 auto 2em;
+		line-height: 1.75;
+	}
+	.promo-pillars {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.2em;
+		margin-bottom: 2.5em;
+		text-align: left;
+	}
+	.promo-pillar {
+		background: rgba(255,255,255,0.08);
+		border: 1px solid rgba(255,255,255,0.12);
+		border-radius: 10px;
+		padding: 1.3em;
+		display: flex;
+		gap: 0.9em;
+		align-items: flex-start;
+	}
+	.promo-icon {
+		font-size: 1.8em;
+		flex-shrink: 0;
+		line-height: 1;
+		margin-top: 0.1em;
+	}
+	.promo-pillar strong {
+		display: block;
+		color: white;
+		font-size: 0.95em;
+		margin-bottom: 0.3em;
+	}
+	.promo-pillar p {
+		color: #93c5fd;
+		font-size: 0.85em;
+		line-height: 1.6;
+		margin: 0;
+	}
+	.btn-promo {
+		display: inline-block;
+		background: white;
+		color: #1e3a8a;
+		padding: 0.85em 2em;
+		border-radius: 6px;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 0.95em;
+		transition: background 0.2s;
+	}
+	.btn-promo:hover { background: #eff6ff; color: #1e3a8a; }
+
+	@media (max-width: 720px) {
+		.promo-pillars { grid-template-columns: 1fr; }
+	}
+
+</style>
